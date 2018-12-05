@@ -1,0 +1,9 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\Nizam R.H Aljawabreh>sqlite3
+SQLite version 3.25.3 2018-11-05 20:37:38
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite>

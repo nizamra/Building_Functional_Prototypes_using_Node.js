@@ -1,0 +1,182 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\Nizam R.H Aljawabreh>sqlite3
+SQLite version 3.25.3 2018-11-05 20:37:38
+Enter ".help" for usage hints.
+Connected to a transient in-memory database.
+Use ".open FILENAME" to reopen on a persistent database.
+sqlite> CREATE TABLE Contacts(
+   ...>     id INTEGER PRIMARY KEY,
+   ...>     FirstName VARCHAR(255),
+   ...>     LastName VARCHAR(255),
+   ...>     EmailAddress VARCHAR(255),
+   ...>     PhoneNumber VARCHAR(255),
+   ...>     ZipCode VARCHAR(255)
+   ...> );
+sqlite> INSERT INTO Contacts
+   ...>     VALUES (12, 'John', 'Doe',
+   ...>         'JohnDoe@email.com`, '999-999-9999', '29384'
+   ...>     );
+   ...>
+   ...> ;
+   ...> INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('Thomas', 'Axen', 'taxen@email.com', '111-111-1111', '90110');
+   ...>
+Error: near "999": syntax error
+
+C:\Users\Nizam R.H Aljawabreh>sqlite3 NewDatabase.db
+SQLite version 3.25.3 2018-11-05 20:37:38
+Enter ".help" for usage hints.
+sqlite> CREATE TABLE Contacts(
+   ...>     id INTEGER PRIMARY KEY,
+   ...>     FirstName VARCHAR(255),
+   ...>     LastName VARCHAR(255),
+   ...>     EmailAddress VARCHAR(255),
+   ...>     PhoneNumber VARCHAR(255),
+   ...>     ZipCode VARCHAR(255)
+   ...> );
+sqlite> INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('Thomas', 'Axen', 'taxen@email.com', '111-111-1111', '90110');
+sqlite> SELECT * FROM Contacts;
+1|Thomas|Axen|taxen@email.com|111-111-1111|90110
+sqlite> INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('jay', 'adams', 'jadams@email.com', '222-222-2222', '90210');
+sqlite> INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('sayed', 'abbas', 'sabbas@email.com', '333-333-333', '90310');
+sqlite> INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('kim', 'akers', 'kakers@email.com', '444-444-4444', '90410');
+sqlite> INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('roya', 'asbari', 'rasbari@email.com', '123-456-7890', '90110');
+sqlite> INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('ann', 'beebe', 'abeebe@email.com', '234-456-5678', '90310');
+sqlite> SELECT * FROM Contacts;
+1|Thomas|Axen|taxen@email.com|111-111-1111|90110
+2|jay|adams|jadams@email.com|222-222-2222|90210
+3|sayed|abbas|sabbas@email.com|333-333-333|90310
+4|kim|akers|kakers@email.com|444-444-4444|90410
+5|roya|asbari|rasbari@email.com|123-456-7890|90110
+6|ann|beebe|abeebe@email.com|234-456-5678|90310
+sqlite> SELECT FirstName FROM Contacts;
+Thomas
+jay
+sayed
+kim
+roya
+ann
+sqlite> SELECT FirstName, LastName FROM Contacts;
+Thomas|Axen
+jay|adams
+sayed|abbas
+kim|akers
+roya|asbari
+ann|beebe
+sqlite> SELECT * FROM Contacts WHERE FirstName = 'Roya';
+sqlite> SELECT * FROM Contacts WHERE FirstName = 'roya';
+5|roya|asbari|rasbari@email.com|123-456-7890|90110
+sqlite> SELECT FirstName FROM Contacts WHERE ID <= 4
+   ...> ;
+Thomas
+jay
+sayed
+kim
+sqlite> SELECT * FROM Contacts WHERE ID <= 4 AND ZipCode = '90210';
+2|jay|adams|jadams@email.com|222-222-2222|90210
+sqlite> SELECT * FROM Contacts ORDER BY ID DESC;
+6|ann|beebe|abeebe@email.com|234-456-5678|90310
+5|roya|asbari|rasbari@email.com|123-456-7890|90110
+4|kim|akers|kakers@email.com|444-444-4444|90410
+3|sayed|abbas|sabbas@email.com|333-333-333|90310
+2|jay|adams|jadams@email.com|222-222-2222|90210
+1|Thomas|Axen|taxen@email.com|111-111-1111|90110
+sqlite>
+sqlite>
+sqlite> SELECT * FROM Contacts WHERE ZipCode >= '90120';
+2|jay|adams|jadams@email.com|222-222-2222|90210
+3|sayed|abbas|sabbas@email.com|333-333-333|90310
+4|kim|akers|kakers@email.com|444-444-4444|90410
+6|ann|beebe|abeebe@email.com|234-456-5678|90310
+sqlite> SELECT * FROM Contacts WHERE ZipCode >= '90120' ORDER BY ID DESC;
+6|ann|beebe|abeebe@email.com|234-456-5678|90310
+4|kim|akers|kakers@email.com|444-444-4444|90410
+3|sayed|abbas|sabbas@email.com|333-333-333|90310
+2|jay|adams|jadams@email.com|222-222-2222|90210
+sqlite> SELECT FirstName FROM Contacts ORDER BY ID DESC;
+ann
+roya
+kim
+sayed
+jay
+Thomas
+sqlite> UPDATE Contacts SET ZipCode = '33333' WHERE ID = 3;
+sqlite> SELECT * FROM Contacts WHERE ID =3;
+3|sayed|abbas|sabbas@email.com|333-333-333|33333
+sqlite> UPDATE Contacts SET ZipCode = '90310' WHERE ID = 3;
+sqlite> UPDATE Contacts SET LastName = 'Smith', ZipCode = '44444' WHERE ID = 4;
+sqlite> SELECT * FROM Contacts WHERE ID =4;
+4|kim|Smith|kakers@email.com|444-444-4444|44444
+sqlite> UPDATE Contacts SET LastName = 'akers', ZipCode = '90410' WHERE ID = 4;
+sqlite> UPDATE Contacts SET ZipCode = '902105s' WHERE ZipCode = '90210';
+sqlite> SELECT * FROM Contacts WHERE ID =5;
+5|roya|asbari|rasbari@email.com|123-456-7890|90110
+sqlite> SELECT * FROM Contacts WHERE ID =2;
+2|jay|adams|jadams@email.com|222-222-2222|902105s
+sqlite> UPDATE Contacts SET ZipCode = '90210' WHERE id = 5;
+sqlite> UPDATE Contacts SET ZipCode = '90210' WHERE ZipCode = '902105s';
+sqlite> SELECT * FROM Contacts WHERE ZipCode = '90210';
+2|jay|adams|jadams@email.com|222-222-2222|90210
+5|roya|asbari|rasbari@email.com|123-456-7890|90210
+sqlite> DELETE FROM Contacts WHERE ID = 4;
+sqlite> SELECT * FROM Contacts;
+1|Thomas|Axen|taxen@email.com|111-111-1111|90110
+2|jay|adams|jadams@email.com|222-222-2222|90210
+3|sayed|abbas|sabbas@email.com|333-333-333|90310
+5|roya|asbari|rasbari@email.com|123-456-7890|90210
+6|ann|beebe|abeebe@email.com|234-456-5678|90310
+sqlite> DELETE FROM Contacts WHERE ZipCode = '00000';
+sqlite> DELETE TABLE Contacts;
+Error: near "TABLE": syntax error
+sqlite> DELETE TABLE Contacts;
+Error: near "TABLE": syntax error
+sqlite> DROP TABLE Contacts;
+sqlite> SELECT * FROM Contacts;
+Error: no such table: Contacts
+sqlite> CREATE TABLE Contacts(id INTEGER PRIMARY KEY, FirstName VARCHAR(255), LastName VARCHAR(255), EmailAddress VARCHAR(255), PhoneNumber VARCHAR(255), ZipCode VARCHAR(255)  );
+sqlite> INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('Thomas', 'Axen', 'taxen@email.com', '111-111-1111', '90110');
+sqlite> INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('jay', 'adams', 'jadams@email.com', '222-222-2222', '90210');
+sqlite> INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('sayed', 'abbas', 'sabbas@email.com', '333-333-333', '90310');
+sqlite> INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('kim', 'akers', 'kakers@email.com', '444-444-4444', '90410');
+sqlite> INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('roya', 'asbari', 'rasbari@email.com', '123-456-7890', '90110');
+sqlite> INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('ann', 'beebe', 'abeebe@email.com', '234-456-5678', '90310');
+sqlite> SELECT * FROM Contacts;
+1|Thomas|Axen|taxen@email.com|111-111-1111|90110
+2|jay|adams|jadams@email.com|222-222-2222|90210
+3|sayed|abbas|sabbas@email.com|333-333-333|90310
+4|kim|akers|kakers@email.com|444-444-4444|90410
+5|roya|asbari|rasbari@email.com|123-456-7890|90110
+6|ann|beebe|abeebe@email.com|234-456-5678|90310
+sqlite> .mode column .width 10
+sqlite> SELECT * FROM Contacts;
+1           Thomas      Axen        taxen@email.com  111-111-1111  90110
+2           jay         adams       jadams@email.co  222-222-2222  90210
+3           sayed       abbas       sabbas@email.co  333-333-333   90310
+4           kim         akers       kakers@email.co  444-444-4444  90410
+5           roya        asbari      rasbari@email.c  123-456-7890  90110
+6           ann         beebe       abeebe@email.co  234-456-5678  90310
+sqlite> .mode column .width 14
+sqlite> SELECT * FROM Contacts;
+1           Thomas      Axen        taxen@email.com  111-111-1111  90110
+2           jay         adams       jadams@email.co  222-222-2222  90210
+3           sayed       abbas       sabbas@email.co  333-333-333   90310
+4           kim         akers       kakers@email.co  444-444-4444  90410
+5           roya        asbari      rasbari@email.c  123-456-7890  90110
+6           ann         beebe       abeebe@email.co  234-456-5678  90310
+sqlite> SELECT * FROM Contacts WHERE ID = 5;
+5           roya        asbari      rasbari@email.com  123-456-7890  90110
+sqlite>
+
+C:\Users\Nizam R.H Aljawabreh>cd C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>sqlite3 quotes.db
+SQLite version 3.25.3 2018-11-05 20:37:38
+Enter ".help" for usage hints.
+sqlite> CREATE TABLE Quotes(quote TEXT, author TEXT, year);
+sqlite> INSERT INTO Quotes VALUES ('Life is Short', 'Unknown', 1902);
+sqlite>
+sqlite> SELECT * FROM Quotes;
+Life is Short|Unknown|1902
+sqlite>
+sqlite>

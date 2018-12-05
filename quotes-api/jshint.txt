@@ -1,0 +1,51 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\Nizam R.H Aljawabreh>cd C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>jshint server.js
+'jshint' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>npm install jshint -g
+C:\Users\Nizam R.H Aljawabreh\AppData\Roaming\npm\jshint -> C:\Users\Nizam R.H Aljawabreh\AppData\Roaming\npm\node_modules\jshint\bin\jshint
+
+> phantomjs-prebuilt@2.1.16 install C:\Users\Nizam R.H Aljawabreh\AppData\Roaming\npm\node_modules\jshint\node_modules\phantomjs-prebuilt
+> node install.js
+
+PhantomJS not found on PATH
+Downloading https://github.com/Medium/phantomjs/releases/download/v2.1.1/phantomjs-2.1.1-windows.zip
+Saving to C:\Users\NIZAMR~1.HAL\AppData\Local\Temp\phantomjs\phantomjs-2.1.1-windows.zip
+Receiving...
+  [=======================================-] 99%
+Received 17767K total.
+Extracting zip contents
+Removing C:\Users\Nizam R.H Aljawabreh\AppData\Roaming\npm\node_modules\jshint\node_modules\phantomjs-prebuilt\lib\phantom
+Copying extracted folder C:\Users\NIZAMR~1.HAL\AppData\Local\Temp\phantomjs\phantomjs-2.1.1-windows.zip-extract-1543317928446\phantomjs-2.1.1-windows -> C:\Users\Nizam R.H Aljawabreh\AppData\Roaming\npm\node_modules\jshint\node_modules\phantomjs-prebuilt\lib\phantom
+Writing location.js file
+Done. Phantomjs binary available at C:\Users\Nizam R.H Aljawabreh\AppData\Roaming\npm\node_modules\jshint\node_modules\phantomjs-prebuilt\lib\phantom\bin\phantomjs.exe
++ jshint@2.9.6
+added 120 packages from 95 contributors in 116.473s
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>jshint server.js
+server.js: line 6, col 9, 'template literal syntax' is only available in ES6 (use 'esversion: 6').
+
+1 error
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>node server.js
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:41
+    if(req.query.year){
+    ^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:41:5)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>

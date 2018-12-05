@@ -1,0 +1,249 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\Nizam R.H Aljawabreh>cd Desktop
+
+C:\Users\Nizam R.H Aljawabreh\Desktop>cd cources
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources>cd "Building Functional Prototypes using Node.js"
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js>cd quotes-api
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (quotes-api)
+version: (1.0.0)
+description: some exercise building REST API
+entry point: (index.js) server.js
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\package.json:
+
+{
+  "name": "quotes-api",
+  "version": "1.0.0",
+  "description": "some exercise building REST API",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>npm install --save express
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN quotes-api@1.0.0 No repository field.
+
++ express@4.16.4
+added 48 packages from 36 contributors and audited 121 packages in 14.125s
+found 0 vulnerabilities
+
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>mk server.js
+'mk' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>node server.js
+Express app listening on port 3000
+express deprecated res.send(status): Use res.sendStatus(status) instead server.js:6:14
+_http_server.js:208
+    throw new ERR_HTTP_INVALID_STATUS_CODE(originalStatusCode);
+    ^
+
+RangeError [ERR_HTTP_INVALID_STATUS_CODE]: Invalid status code: NaN
+    at ServerResponse.writeHead (_http_server.js:208:11)
+    at ServerResponse._implicitHeader (_http_server.js:199:8)
+    at write_ (_http_outgoing.js:585:9)
+    at ServerResponse.end (_http_outgoing.js:709:5)
+    at Array.write (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\node_modules\finalhandler\index.js:297:9)
+    at listener (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\node_modules\on-finished\index.js:169:15)
+    at onFinish (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\node_modules\on-finished\index.js:100:5)
+    at callback (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\node_modules\ee-first\index.js:55:10)
+    at IncomingMessage.onevent (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\node_modules\ee-first\index.js:93:5)
+    at IncomingMessage.emit (events.js:182:13)
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>node server.js
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:6
+    response.send('Get request received at);
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+SyntaxError: Invalid or unexpected token
+    at new Script (vm.js:79:7)
+    at createScript (vm.js:251:10)
+    at Object.runInThisContext (vm.js:303:10)
+    at Module._compile (internal/modules/cjs/loader.js:656:28)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>node server.js
+Express app listening on port 3000
+^C
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>node server.js
+Express app listening on port 3000
+^C
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>nodemon server.js
+[nodemon] 1.18.6
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:36
+    if(req.query.year){
+    ^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:36:5)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:36
+    if(request.query.year){
+    ^
+
+ReferenceError: request is not defined
+    at Object.<anonymous> (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:36:5)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:36
+    if(req.query.year){
+    ^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:36:5)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+[nodemon] app crashed - waiting for file changes before starting...
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:35
+if(req.query.year){
+^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:35:1)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+[nodemon] app crashed - waiting for file changes before starting...
+^CTerminate batch job (Y/N)? y
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>node server.js
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:35
+if(req.query.year){
+^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:35:1)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>node server.js
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:36
+if(req.query.year){
+^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:36:1)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>node server.js
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:36
+    if(req.query.year){
+    ^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:36:5)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>node server.js
+Express app listening on port 3000
+Get a list of all quotes as json
+return quote with the ID: 3
+^C
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>node server.js
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:41
+    if(req.query.year){
+    ^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:41:5)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>

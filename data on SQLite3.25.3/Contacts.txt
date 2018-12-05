@@ -1,0 +1,7 @@
+CREATE TABLE Contacts(id INTEGER PRIMARY KEY, FirstName VARCHAR(255), LastName VARCHAR(255), EmailAddress VARCHAR(255), PhoneNumber VARCHAR(255), ZipCode VARCHAR(255)  );
+INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('Thomas', 'Axen', 'taxen@email.com', '111-111-1111', '90110');
+INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('jay', 'adams', 'jadams@email.com', '222-222-2222', '90210');
+INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('sayed', 'abbas', 'sabbas@email.com', '333-333-333', '90310');
+INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('kim', 'akers', 'kakers@email.com', '444-444-4444', '90410');
+INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('roya', 'asbari', 'rasbari@email.com', '123-456-7890', '90110');
+INSERT INTO Contacts (FirstName, LastName, EmailAddress, PhoneNumber, ZipCode) VALUES ('ann', 'beebe', 'abeebe@email.com', '234-456-5678', '90310');

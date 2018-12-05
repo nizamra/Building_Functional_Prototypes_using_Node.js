@@ -1,0 +1,95 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\Nizam R.H Aljawabreh>cd C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>node server.js
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:41
+    if(req.query.year){
+    ^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:41:5)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>node server.js
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:41
+    if (req.query.year){
+    ^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:41:5)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>cd C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>node server.js
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:10
+if (req.query.year){
+^
+
+ReferenceError: req is not defined
+    at Object.<anonymous> (C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api\server.js:10:1)
+    at Module._compile (internal/modules/cjs/loader.js:688:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:699:10)
+    at Module.load (internal/modules/cjs/loader.js:598:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:537:12)
+    at Function.Module._load (internal/modules/cjs/loader.js:529:3)
+    at Function.Module.runMain (internal/modules/cjs/loader.js:741:12)
+    at startup (internal/bootstrap/node.js:285:19)
+    at bootstrapNodeJSCore (internal/bootstrap/node.js:739:3)
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>nodemon server.js
+[nodemon] 1.18.6
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Express app listening on port 3000
+return quote with the ID: 3
+Get a list of all quotes as json
+Get a list of all quotes as json
+return quote with the ID: 2
+Get a list of all quotes as json
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Express app listening on port 3000
+^CTerminate batch job (Y/N)? y
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>npm install --save body-parser
+npm WARN quotes-api@1.0.0 No repository field.
+
++ body-parser@1.18.3
+updated 1 package and audited 151 packages in 7.284s
+found 0 vulnerabilities
+
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\quotes-api>nodemon server.js
+[nodemon] 1.18.6
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Express app listening on port 3000
+Insert a new quote
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Express app listening on port 3000
+Insert a new quote: We become what we think about
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Listening on Port 3000
+return quote with the ID: 2
+Insert a new quote: We become what we think about

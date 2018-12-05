@@ -1,0 +1,266 @@
+Microsoft Windows [Version 10.0.14393]
+(c) 2016 Microsoft Corporation. All rights reserved.
+
+C:\Users\Nizam R.H Aljawabreh>node -v
+v10.13.0
+
+C:\Users\Nizam R.H Aljawabreh>cd Desktop
+
+C:\Users\Nizam R.H Aljawabreh\Desktop>mkdir node-sample
+
+C:\Users\Nizam R.H Aljawabreh\Desktop>cd node-sample
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\node-sample>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (sample)
+version: (1.0.0)
+description:
+entry point: (index.js) server.js
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to C:\Users\Nizam R.H Aljawabreh\Desktop\node-sample\package.json:
+
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\node-sample>node server.js
+Hello from Node.js
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\node-sample>
+C:\Users\Nizam R.H Aljawabreh\Desktop\node-sample>
+C:\Users\Nizam R.H Aljawabreh\Desktop\node-sample>npm install -g nodemon
+C:\Users\Nizam R.H Aljawabreh\AppData\Roaming\npm\nodemon -> C:\Users\Nizam R.H Aljawabreh\AppData\Roaming\npm\node_modules\nodemon\bin\nodemon.js
+
+> nodemon@1.18.6 postinstall C:\Users\Nizam R.H Aljawabreh\AppData\Roaming\npm\node_modules\nodemon
+> node bin/postinstall || exit 0
+
+Love nodemon? You can now support the project via the open collective:
+ > https://opencollective.com/nodemon/donate
+
+npm WARN optional SKIPPING OPTIONAL DEPENDENCY: fsevents@1.2.4 (node_modules\nodemon\node_modules\fsevents):
+npm WARN notsup SKIPPING OPTIONAL DEPENDENCY: Unsupported platform for fsevents@1.2.4: wanted {"os":"darwin","arch":"any"} (current: {"os":"win32","arch":"x64"})
+
++ nodemon@1.18.6
+added 223 packages from 130 contributors in 46.66s
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\node-sample>nodemon server.js
+[nodemon] 1.18.6
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node server.js`
+Hello from Node.js
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Hello from me Node.js
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Hello from me Node.js man
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Hello WSorld! from me Node.js man
+[nodemon] clean exit - waiting for changes before restart
+[nodemon] restarting due to changes...
+[nodemon] starting `node server.js`
+Hello World! from me Node.js man
+[nodemon] clean exit - waiting for changes before restart
+^CTerminate batch job (Y/N)? y
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\node-sample>cd desctop
+The system cannot find the path specified.
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\node-sample>cd..
+
+C:\Users\Nizam R.H Aljawabreh\Desktop>cd cources
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources>mkdir Building Functional Prototypes using Node.js
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources>cd Building Functional Prototypes using Node.js
+The system cannot find the path specified.
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources>cd Building Functional Prototypes using Node.js
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js>mkdir hello-node
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js>cd h hello-node
+'hello-node' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js>cd hello-node
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-node>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (hello-node)
+version: (1.0.0)
+description: My first Node.js project
+entry point: (index.js) server.js
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-node\package.json:
+
+{
+  "name": "hello-node",
+  "version": "1.0.0",
+  "description": "My first Node.js project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-node>node server.js
+listening on port 3000
+New request to: /
+New request to: /favicon.ico
+New request to: /hello/world
+New request to: /favicon.ico
+New request to: /hello/world
+New request to: /favicon.ico
+New request to: /hello/world
+New request to: /favicon.ico
+^C
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-node>
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-node>
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-node>
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-node>
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-node>
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-node>cd..
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js>mkdir hello-express
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js>cd hello-express
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-express>npm init
+This utility will walk you through creating a package.json file.
+It only covers the most common items, and tries to guess sensible defaults.
+
+See `npm help json` for definitive documentation on these fields
+and exactly what they do.
+
+Use `npm install <pkg>` afterwards to install a package and
+save it as a dependency in the package.json file.
+
+Press ^C at any time to quit.
+package name: (hello-express)
+version: (1.0.0)
+description: My first Express project
+entry point: (index.js) server.js
+test command:
+git repository:
+keywords:
+author:
+license: (ISC)
+About to write to C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-express\package.json:
+
+{
+  "name": "hello-express",
+  "version": "1.0.0",
+  "description": "My first Express project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
+
+
+Is this OK? (yes)
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-express>npm install express --save
+npm notice created a lockfile as package-lock.json. You should commit this file.
+npm WARN hello-express@1.0.0 No repository field.
+
++ express@4.16.4
+added 48 packages from 36 contributors and audited 121 packages in 14.934s
+found 0 vulnerabilities
+
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-express>node server.js
+Express app listening on port 3000
+^C
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-express>npm install @types/express
+npm WARN hello-express@1.0.0 No repository field.
+
+npm ERR! path C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-express\node_modules\@types\serve-static\package.json.1645077318
+npm ERR! code EPERM
+npm ERR! errno -4048
+npm ERR! syscall rename
+npm ERR! Error: EPERM: operation not permitted, rename 'C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-express\node_modules\@types\serve-static\package.json.1645077318' -> 'C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-express\node_modules\@types\serve-static\package.json'
+npm ERR!  { [Error: EPERM: operation not permitted, rename 'C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-express\node_modules\@types\serve-static\package.json.1645077318' -> 'C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-express\node_modules\@types\serve-static\package.json']
+npm ERR!   cause:
+npm ERR!    { Error: EPERM: operation not permitted, rename 'C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-express\node_modules\@types\serve-static\package.json.1645077318' -> 'C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-express\node_modules\@types\serve-static\package.json'
+npm ERR!      errno: -4048,
+npm ERR!      code: 'EPERM',
+npm ERR!      syscall: 'rename',
+npm ERR!      path:
+npm ERR!       'C:\\Users\\Nizam R.H Aljawabreh\\Desktop\\cources\\Building Functional Prototypes using Node.js\\hello-express\\node_modules\\@types\\serve-static\\package.json.1645077318',
+npm ERR!      dest:
+npm ERR!       'C:\\Users\\Nizam R.H Aljawabreh\\Desktop\\cources\\Building Functional Prototypes using Node.js\\hello-express\\node_modules\\@types\\serve-static\\package.json' },
+npm ERR!   stack:
+npm ERR!    'Error: EPERM: operation not permitted, rename \'C:\\Users\\Nizam R.H Aljawabreh\\Desktop\\cources\\Building Functional Prototypes using Node.js\\hello-express\\node_modules\\@types\\serve-static\\package.json.1645077318\' -> \'C:\\Users\\Nizam R.H Aljawabreh\\Desktop\\cources\\Building Functional Prototypes using Node.js\\hello-express\\node_modules\\@types\\serve-static\\package.json\'',
+npm ERR!   errno: -4048,
+npm ERR!   code: 'EPERM',
+npm ERR!   syscall: 'rename',
+npm ERR!   path:
+npm ERR!    'C:\\Users\\Nizam R.H Aljawabreh\\Desktop\\cources\\Building Functional Prototypes using Node.js\\hello-express\\node_modules\\@types\\serve-static\\package.json.1645077318',
+npm ERR!   dest:
+npm ERR!    'C:\\Users\\Nizam R.H Aljawabreh\\Desktop\\cources\\Building Functional Prototypes using Node.js\\hello-express\\node_modules\\@types\\serve-static\\package.json',
+npm ERR!   parent: 'hello-express' }
+npm ERR!
+npm ERR! The operation was rejected by your operating system.
+npm ERR! It's possible that the file was already in use (by a text editor or antivirus),
+npm ERR! or that you lack permissions to access it.
+npm ERR!
+npm ERR! If you believe this might be a permissions issue, please double-check the
+npm ERR! permissions of the file and its containing directories, or try running
+npm ERR! the command again as root/Administrator (though this is not recommended).
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\Nizam R.H Aljawabreh\AppData\Roaming\npm-cache\_logs\2018-11-26T03_29_38_050Z-debug.log
+
+C:\Users\Nizam R.H Aljawabreh\Desktop\cources\Building Functional Prototypes using Node.js\hello-express>node server.js
+Express app listening on port 3000
